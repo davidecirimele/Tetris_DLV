@@ -115,12 +115,12 @@
 /* 115 */             this.gp.getSingleScorePanel().updatePrecScore();
 /* 116 */             this.gp.getSingleScorePanel().updateIncreasePoints();
 /* 117 */             if (this.loop.getPlayerFPS() > 100) {
-/* 118 */               this.loop.setPlayerSleepTime(this.loop.getPlayerFPS() - 50);
-/* 119 */               this.loop.setLevelFPS(this.loop.getPlayerFPS() - 50);
+/* 118 */               this.loop.setPlayerSleepTime(this.loop.getPlayerFPS() - 20);
+/* 119 */               this.loop.setLevelFPS(this.loop.getPlayerFPS() - 20);
 /*     */             }
 /* 121 */             else if (this.loop.getPlayerFPS() <= 100 && this.loop.getPlayerFPS() > 25) {
-/* 122 */               this.loop.setPlayerSleepTime(this.loop.getPlayerFPS() - 25);
-/* 123 */               this.loop.setLevelFPS(this.loop.getPlayerFPS() - 25);
+/* 122 */               this.loop.setPlayerSleepTime(this.loop.getPlayerFPS() - 10);
+/* 123 */               this.loop.setLevelFPS(this.loop.getPlayerFPS() - 10);
 /*     */             } 
 /*     */           } 
 /* 126 */           this.gp.getSingleScorePanel().setScorePlayer(this.gp.getSingleScorePanel().getScorePlayer() + this.gp.getSingleScorePanel().getIncreasePoints());
