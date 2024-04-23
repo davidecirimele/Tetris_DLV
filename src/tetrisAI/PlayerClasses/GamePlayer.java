@@ -219,11 +219,15 @@
 /* 219 */       if (currPiecePlayer.getPiece()[i].getRow() < (this.map.getMatrix()).length - 1 - diff) {
 /*     */         
 /* 221 */         if (map2.getMatrix()[currPiecePlayer.getPiece()[i].getRow() + 1][currPiecePlayer.getPiece()[i].getColumn()].getId() != currPiecePlayer.getId() && map2.getMatrix()[currPiecePlayer.getPiece()[i].getRow() + 1][currPiecePlayer.getPiece()[i].getColumn()].getValue() != 0) {
-/* 222 */           return false;
+    /* 222 */       //this.gp.startLandingAnimation();
+                    sleepTime(150);
+                    return false;
 /*     */         }
-/*     */       } else {
-/*     */         
-/* 226 */         return false;
+/*     */ } else {
+                    //this.gp.startLandingAnimation();
+                    sleepTime(150);
+                      
+                    return false;
 /*     */       } 
 /*     */     } 
 /*     */ 
@@ -415,7 +419,7 @@
 /*     */     } 
 /*     */   }
 /*     */   
-/*     */   public void sleepTime(int i) {
+/*     */   public void sleepTime(long i) {
 /*     */     try {
 /* 420 */       Thread.sleep(i);
 /* 421 */     } catch (InterruptedException e) {
